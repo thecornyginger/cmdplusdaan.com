@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cmd+Daan | Digital Creator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #ab947a;
+            font-family: 'Jersey 15', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .logo-container {
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        .logo {
+             /* Assuming the logo file is named logo.gif */
+             /* Adjust width/height as needed */
+            max-width: 400px; 
+            height: auto;
+        }
+
+        .content-container {
+            display: flex;
+            flex-direction: column; /* Stack blocks vertically */
+            align-items: center; /* Center blocks horizontally */
+            gap: 30px; /* Space between content blocks */
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+            padding: 10px;
+        }
+
+        .content-block {
+            display: flex;
+            flex-direction: row-reverse; /* Place image on the right, text on the left */
+            align-items: center; /* Vertically center items in the block */
+            text-align: left; /* Align text to the left */
+            /* background-color: rgba(255, 255, 255, 0.1); */ /* Removed background */
+            padding: 10px;
+            border-radius: 0px;
+            width: 450px; /* Adjust width as needed for horizontal layout */
+            /* box-shadow: 0 2px 4px rgba(0,0,0,0.1); */ /* Removed shadow */
+        }
+
+        .content-block img {
+            width: 150px; /* Adjust image size as needed */
+            height: 150px;
+            object-fit: cover; /* Adjust image fit */
+            margin-right: 0; /* Remove right margin */
+            margin-left: 20px; /* Add space to the left of the image */
+            margin-bottom: 0; /* Remove bottom margin */
+            border-radius: 32px; /* Updated border-radius for rounded corners */
+            background-color: #ccc; /* Placeholder background */
+            flex-shrink: 0; /* Prevent image from shrinking */
+        }
+
+         .content-block p {
+            color: #3e3546; /* Adjust text color */
+            font-size: 18px; /* Set paragraph font size */
+            margin: 0; /* Reset paragraph margin */
+         }
+
+        .content-block h3 {
+            color: #2e222f; /* Adjust text color */
+            font-size: 32px; /* Set heading font size */
+            margin-top: 0; /* Remove top margin */
+            margin-bottom: 5px; /* Optional: Add some space below heading */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="logo-container">
+        <!-- Make sure 'logo.gif' is the correct path to your logo -->
+        <img src="cmd+daan@3.gif" alt="CMD+DAAN Logo" class="logo">
+    </div>
+
+    <div class="content-container">
+        <div class="content-block">
+            <!-- Replace with your image -->
+            <img src="idle-guild-icon.png" alt="Feature 1 Image">
+            <div>
+                <h3>Idle Guild</h3>
+                <p>I'm baby viral meh bitters praxis ascot, XOXO ugh hammock pabst franzen 3 wolf moon knausgaard direct trade salvia yes plz. Organic chia DIY gluten-free marfa letterpress meggings 8-bit gorpcore </p>
+            </div>
+        </div>
+        <div class="content-block">
+            <!-- Replace with your image -->
+            <img src="placeholder2.jpg" alt="Feature 2 Image">
+            <div>
+                <h3>Downtime Idle</h3>
+                <p>Hella literally master cleanse, asymmetrical disrupt chambray tousled umami solarpunk tbh. Wayfarers godard franzen fingerstache shabby chic jianbing pok pok bicycle rights VHS celiac yuccie. Godard </p>
+            </div>
+        </div>
+        <div class="content-block">
+            <!-- Replace with your image -->
+            <img src="placeholder3.jpg" alt="Feature 3 Image">
+            <div>
+                <h3>Feature Three Title</h3>
+                <p>Unicorn iceland fixie migas, offal sriracha man bun. Sus asymmetrical plaid vibecession truffaut shaman squid humblebrag praxis taiyaki vegan enamel pin pork belly lyft yuccie. Hammock </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
