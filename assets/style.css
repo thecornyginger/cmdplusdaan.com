@@ -1,0 +1,174 @@
+body {
+    background-color: #f2ede4;
+    font-family: 'Jersey 15', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.logo-container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.logo {
+     /* Assuming the logo file is named logo.gif */
+     /* Adjust width/height as needed */
+    max-width: 400px;
+    height: auto;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column; /* Stack blocks vertically */
+    align-items: center; /* Center blocks horizontally */
+    gap: 30px; /* Space between content blocks */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    padding: 10px;
+}
+
+.content-block {
+    display: flex;
+    flex-direction: row-reverse; /* Place image on the right, text on the left */
+    align-items: center; /* Vertically center items in the block */
+    text-align: left; /* Align text to the left */
+    /* background-color: rgba(255, 255, 255, 0.1); */ /* Removed background */
+    padding: 10px;
+    border-radius: 0px;
+    width: 450px; /* Adjust width as needed for horizontal layout */
+    /* box-shadow: 0 2px 4px rgba(0,0,0,0.1); */ /* Removed shadow */
+}
+
+.content-block img {
+    width: 150px; /* Adjust image size as needed */
+    height: 150px;
+    object-fit: cover; /* Adjust image fit */
+    margin-right: 0; /* Remove right margin */
+    margin-left: 20px; /* Add space to the left of the image */
+    margin-bottom: 0; /* Remove bottom margin */
+    border-radius: 0px; /* Updated border-radius for rounded corners */
+    flex-shrink: 0; /* Prevent image from shrinking */
+}
+
+p {
+    color: #47443c; /* Adjust text color */
+    font-size: 18px; /* Set paragraph font size */
+    margin: 0 0 10px 0; /* Reset paragraph margin, add bottom margin */
+    text-align: left; /* Ensure P is left-aligned */
+}
+
+h3 {
+    color: #2b2821; /* Adjust text color */
+    font-size: 32px; /* Set heading font size */
+    margin-top: 0; /* Remove top margin */
+    margin-bottom: 5px; /* Optional: Add some space below heading */
+}
+
+h1 {
+    color: #2b2821;
+    font-size: 48px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center; /* Center H1 */
+}
+
+h2 {
+    color: #2b2821;
+    font-size: 40px;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    text-align: left; /* Ensure H2 is left-aligned */
+}
+
+@media (max-width: 768px) {
+    .logo {
+        max-width: 80%; /* Adjust logo size */
+        display: block; /* Added for centering */
+        margin-left: auto; /* Added for centering */
+        margin-right: auto; /* Added for centering */
+    }
+
+    .content-container {
+        /* No changes needed */
+    }
+
+    .content-block {
+        /* flex-direction: column; Removed */
+        width: 90%; /* Make blocks wider */
+        text-align: left; /* Reverted to left alignment */
+    }
+
+    .content-block img {
+        margin-left: 20px; /* Restore margin for row-reverse */
+        /* margin-right: auto; Removed */
+        /* margin-bottom: 20px; Removed */
+        width: 120px; /* Increase image size */
+        height: 120px; /* Increase image size */
+    }
+
+    .content-block h3 {
+        font-size: 34px; /* Adjust heading font size for mobile */
+    }
+
+    .content-block p {
+        font-size: 16px; /* Adjust paragraph font size for mobile */
+    }
+
+    h1 {
+        font-size: 40px; /* Adjust heading font size for mobile */
+    }
+
+    h2 {
+        font-size: 36px; /* Adjust heading font size for mobile */
+    }
+
+    /* Removed .content-block div rule */
+} 
+
+/* Add styles for lists */
+ul {
+    color: #47443c;
+    font-size: 18px;
+    margin: 0 0 10px 20px; /* Adjust margins */
+    padding: 0;
+    list-style-position: outside;
+    text-align: left; /* Ensure UL is left-aligned */
+}
+
+li {
+    margin-bottom: 5px; /* Space between list items */
+}
+
+/* Privacy Page Specific Styles */
+.privacy-content .content-block {
+    flex-direction: column; /* Stack content vertically */
+    align-items: flex-start; /* Align items to the start (left) */
+    text-align: left; /* Ensure text is left-aligned */
+    width: 600px; /* Adjust width for text content */
+    max-width: 90%; /* Ensure responsiveness */
+    padding: 20px; /* Add some padding */
+    margin-bottom: 20px; /* Space between blocks */
+}
+
+.privacy-content .content-block img { /* Hide images if any were accidentally included */
+    display: none;
+}
+
+.privacy-content .content-block h2 {
+    margin-top: 0; /* Adjust margin for H2 inside block */
+}
+
+/* Responsive adjustments for privacy page blocks */
+@media (max-width: 768px) {
+    .privacy-content .content-block {
+        width: 90%;
+        padding: 15px;
+    }
+    ul {
+        font-size: 16px; /* Adjust paragraph font size for mobile */
+        margin-left: 15px;
+    }
+} 
