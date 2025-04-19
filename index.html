@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: #ab947a;
+            background-color: #f2ede4;
             font-family: 'Jersey 15', sans-serif;
             margin: 0;
             padding: 0;
@@ -64,16 +64,53 @@
         }
 
          .content-block p {
-            color: #3e3546; /* Adjust text color */
+            color: #47443c; /* Adjust text color */
             font-size: 18px; /* Set paragraph font size */
             margin: 0; /* Reset paragraph margin */
          }
 
         .content-block h3 {
-            color: #2e222f; /* Adjust text color */
+            color: #2b2821; /* Adjust text color */
             font-size: 32px; /* Set heading font size */
             margin-top: 0; /* Remove top margin */
             margin-bottom: 5px; /* Optional: Add some space below heading */
+        }
+
+        @media (max-width: 768px) {
+            .logo {
+                max-width: 80%; /* Adjust logo size */
+                display: block; /* Added for centering */
+                margin-left: auto; /* Added for centering */
+                margin-right: auto; /* Added for centering */
+            }
+
+            .content-container {
+                /* No changes needed */
+            }
+
+            .content-block {
+                /* flex-direction: column; Removed */
+                width: 90%; /* Make blocks wider */
+                text-align: left; /* Reverted to left alignment */
+            }
+
+            .content-block img {
+                margin-left: 20px; /* Restore margin for row-reverse */
+                /* margin-right: auto; Removed */
+                /* margin-bottom: 20px; Removed */
+                width: 120px; /* Increase image size */
+                height: 120px; /* Increase image size */
+            }
+
+            .content-block h3 {
+                font-size: 34px; /* Adjust heading font size for mobile */
+            }
+
+            .content-block p {
+                font-size: 16px; /* Adjust paragraph font size for mobile */
+            }
+
+            /* Removed .content-block div rule */
         }
     </style>
 </head>
@@ -81,16 +118,16 @@
 
     <div class="logo-container">
         <!-- Make sure 'logo.gif' is the correct path to your logo -->
-        <img src="cmd+daan@3.gif" alt="CMD+DAAN Logo" class="logo">
+        <img src="assets/cmd+daan@3.gif" alt="CMD+DAAN Logo" class="logo">
     </div>
 
     <div class="content-container">
         <div class="content-block">
             <!-- Replace with your image -->
-            <img src="idle-guild.png" alt="Feature 1 Image">
+            <img src="assets/idle-guild.png" alt="Feature 1 Image">
             <div>
                 <h3>Idle Guild</h3>
-                <p>Build and automate a fantasy adventurers’ guild in this idle game inspired by D&D. Recruit heroes, complete quests, earn gold while away, and grow your guild into a legendary empire.</p>
+                <p>Build and automate a fantasy adventurers' guild in this idle game inspired by D&D. Recruit heroes, complete quests, earn gold while away, and grow your guild into a legendary empire.</p>
             </div>
         </div>
     </div>
